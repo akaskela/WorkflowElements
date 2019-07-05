@@ -1,5 +1,5 @@
 # WorkflowElements
-This is the open source repository for Workflow Elements (http://www.WorkflowElements.com).
+This is the open source repository for Workflow Elements (http://www.WorkflowElements.com). Full documentation is available at that site while I work on migrating it to GitHub.
 
 Workflow Elements is a workflow assembly available for the Microsoft Power Platform / CDS, with an enhanced version available for Dynamics 365.
 

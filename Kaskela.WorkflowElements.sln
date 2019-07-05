@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Kaskela.WorkflowElements.Shared", "Kaskela.WorkflowElements.Shared\Kaskela.WorkflowElements.Shared.shproj", "{C5B19C49-3444-41CA-9C0A-31505AD040A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaskela.WorkflowElements.CE", "Kaskela.WorkflowElements.CE\Kaskela.WorkflowElements.CE.csproj", "{3971FAB5-1C99-452A-8FFC-635012A518B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaskela.WorkflowElements.Cds", "Kaskela.WorkflowElements.Cds\Kaskela.WorkflowElements.Cds.csproj", "{A4929466-B735-4525-BF7E-33AB6D0DA652}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Kaskela.WorkflowElements.Shared\Kaskela.WorkflowElements.Shared.projitems*{3971fab5-1c99-452a-8ffc-635012a518b2}*SharedItemsImports = 4
+		Kaskela.WorkflowElements.Shared\Kaskela.WorkflowElements.Shared.projitems*{a4929466-b735-4525-bf7e-33ab6d0da652}*SharedItemsImports = 4
+		Kaskela.WorkflowElements.Shared\Kaskela.WorkflowElements.Shared.projitems*{c5b19c49-3444-41ca-9c0a-31505ad040a0}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3971FAB5-1C99-452A-8FFC-635012A518B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3971FAB5-1C99-452A-8FFC-635012A518B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3971FAB5-1C99-452A-8FFC-635012A518B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3971FAB5-1C99-452A-8FFC-635012A518B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4929466-B735-4525-BF7E-33AB6D0DA652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4929466-B735-4525-BF7E-33AB6D0DA652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4929466-B735-4525-BF7E-33AB6D0DA652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4929466-B735-4525-BF7E-33AB6D0DA652}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {895FFFA8-89B8-45F5-857D-F4A82E0BA11C}
+	EndGlobalSection
+EndGlobal

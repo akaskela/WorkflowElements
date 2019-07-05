@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c5b19c49-3444-41ca-9c0a-31505ad040a0</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Kaskela.WorkflowElements.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\AssignGetOwnerByQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\AuditGetRecentUpdates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\DateAddOrSubtract.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\DateBuildDateFromParts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\DateConvertToCustomText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\DateGetDateComponents.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\DocumentRenameFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\EmailAddRecipientsFromQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\EmailAttachMultipleDocuments.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\EmailSendSavedEmail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\MathAnalyzeDataQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\MathDetermineRatio.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\QueryGetResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\QueryRunWorkflowOnResults.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\RelationshipAssociateFromQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\RelationshipDisassociateAll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\WorkflowGetMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\AuditBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\ColumnInformation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\NumericManipulator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\QueryAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\RetrieveActivityBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\TimeZoneSummary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\WorkflowBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\WorkflowQueryBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StaticMethods.cs" />
+  </ItemGroup>
+</Project>

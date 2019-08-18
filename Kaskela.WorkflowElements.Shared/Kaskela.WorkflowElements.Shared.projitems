@@ -25,6 +25,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Activities\QueryRunWorkflowOnResults.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\RelationshipAssociateFromQuery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\RelationshipDisassociateAll.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\WebHook.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\WorkflowGetMetadata.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\AuditBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\ColumnInformation.cs" />
@@ -35,5 +36,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\WorkflowBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\WorkflowQueryBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StaticMethods.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Scripts\_afk\common.js" />
   </ItemGroup>
 </Project>

@@ -240,25 +240,4 @@
     <Compile Include="$(MSBuildThisFileDirectory)Newtonsoft\WriteState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StaticMethods.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Dynamic.snk" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.csproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Dotnet.xproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Net20.csproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Net35.csproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Net40.csproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Portable.csproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Portable40.csproj" />
-    <None Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.ruleset" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Net20.project.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Net35.project.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Net40.project.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Portable.project.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.Portable40.project.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.project.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\Newtonsoft.Json.project.lock.json" />
-    <Content Include="$(MSBuildThisFileDirectory)Newtonsoft\project.json" />
-  </ItemGroup>
 </Project>

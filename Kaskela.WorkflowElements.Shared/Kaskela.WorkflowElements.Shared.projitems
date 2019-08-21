@@ -30,7 +30,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Activities\WorkflowGetMetadata.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\AuditBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\ColumnInformation.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\JsonUtil.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\NumericManipulator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\QueryAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ContributingClasses\RetrieveActivityBase.cs" />

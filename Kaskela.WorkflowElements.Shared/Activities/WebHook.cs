@@ -3,6 +3,7 @@ using Microsoft.Xrm.Sdk;
 using Microsoft.Xrm.Sdk.Messages;
 using Microsoft.Xrm.Sdk.Metadata;
 using Microsoft.Xrm.Sdk.Workflow;
+using Newtonsoft.Json;
 using System;
 using System.Activities;
 using System.Collections.Generic;
@@ -66,7 +67,7 @@ namespace Kaskela.WorkflowElements.Shared.Activities
             if (workflowContext != null && workflowContext.InputParameters.Contains("Target") && workflowContext.InputParameters["Target"] is Entity && string.IsNullOrEmpty(RequestBody.Get<string>(context)))
             {
                 var entity = (Entity)workflowContext.InputParameters["Target"];
-                body = Stringify(new EntitySpecification() { EntityLogicalName = entity.LogicalName, EntityId = entity.Id });
+                body = JsonConvert.SerializeObject(entity);
             }
             else
             {
@@ -144,19 +145,6 @@ namespace Kaskela.WorkflowElements.Shared.Activities
                 }
             }
         }
-        public static string Stringify(EntitySpecification obj)
-        {
-            // Create a stream to serialize the object to.  
-            var ms = new MemoryStream();
-
-            // Serializer the User object to the stream.  
-            var ser = new DataContractJsonSerializer(obj.GetType());
-            ser.WriteObject(ms, obj);
-            byte[] json = ms.ToArray();
-            ms.Close();
-            return Encoding.UTF8.GetString(json, 0, json.Length);
-        }
-
     }
 
     public static class HttpClientExtensions

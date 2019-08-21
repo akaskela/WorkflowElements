@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {},
+    ".NETFramework,Version=v4.5/win": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "": [],
+    ".NETFramework,Version=v4.5": []
+  },
+  "packageFolders": {
+    "C:\\Users\\MichaelOchsMVP\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MichaelOchsMVP\\Desktop\\Newtonsoft.Json-9.0.1\\Src\\Newtonsoft.Json\\Newtonsoft.Json.csproj",
+      "projectName": "Newtonsoft.Json",
+      "projectPath": "C:\\Users\\MichaelOchsMVP\\Desktop\\Newtonsoft.Json-9.0.1\\Src\\Newtonsoft.Json\\Newtonsoft.Json.csproj",
+      "projectJsonPath": "C:\\Users\\MichaelOchsMVP\\Desktop\\Newtonsoft.Json-9.0.1\\Src\\Newtonsoft.Json\\Newtonsoft.Json.project.json",
+      "packagesPath": "C:\\Users\\MichaelOchsMVP\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MichaelOchsMVP\\Desktop\\Newtonsoft.Json-9.0.1\\Src\\Newtonsoft.Json\\obj\\",
+      "projectStyle": "ProjectJson",
+      "configFilePaths": [
+        "C:\\Users\\MichaelOchsMVP\\Desktop\\Newtonsoft.Json-9.0.1\\Src\\NuGet.Config",
+        "C:\\Users\\MichaelOchsMVP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+      }
+    },
+    "frameworks": {
+      "net45": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      }
+    }
+  }
+}

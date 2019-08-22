@@ -29,9 +29,6 @@ namespace Kaskela.WorkflowElements.Shared.Activities
         [Input("Request Url")]
         public InArgument<string> RequestUrl { get; set; }
 
-        [Input("Send Current Record as Request Body")]
-        public InArgument<bool> SendCurrentRecordAsBody { get; set; }
-
         [Input("Request Body")]
         public InArgument<string> RequestBody { get; set; }
 
@@ -68,15 +65,8 @@ namespace Kaskela.WorkflowElements.Shared.Activities
         {
             string body = string.Empty;
             var workflowContext = context.GetExtension<IWorkflowContext>();
-            if (workflowContext != null && workflowContext.InputParameters.Contains("Target") && workflowContext.InputParameters["Target"] is Entity && string.IsNullOrEmpty(RequestBody.Get<string>(context)))
-            {
-                if (SendCurrentRecordAsBody.Get(context))
-                {
-                    var entity = (Entity)workflowContext.InputParameters["Target"];
-                    body = JsonConvert.SerializeObject(entity);
-                }
-            }
-            else
+
+            if(!string.IsNullOrEmpty(RequestBody.Get<string>(context)))
             {
                 body = RequestBody.Get<string>(context);
             }
@@ -129,11 +119,12 @@ namespace Kaskela.WorkflowElements.Shared.Activities
                     case DELETE:
                         client.DeleteAsync(RequestUrl.Get<string>(context));
                         return null;
-                    default:
+                    case POST:
                         client.PostAsync(RequestUrl.Get<string>(context), content);
                         return null;
+                    default:
+                        throw new InvalidPluginExecutionException("The Request Method supplied is not supported. Try using GET, PATCH, PUT, DELETE or POST");
                 }
-
             }
             else
             {
@@ -147,8 +138,10 @@ namespace Kaskela.WorkflowElements.Shared.Activities
                         return await client.PutAsync(RequestUrl.Get<string>(context), content);
                     case DELETE:
                         return await client.DeleteAsync(RequestUrl.Get<string>(context));
-                    default:
+                    case POST:
                         return await client.PostAsync(RequestUrl.Get<string>(context), content);
+                    default:
+                        throw new InvalidPluginExecutionException("The Request Method supplied is not supported. Try using GET, PATCH, PUT, DELETE or POST");
                 }
             }
         }

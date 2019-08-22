@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Activities\EmailAddRecipientsFromQuery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\EmailAttachMultipleDocuments.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\EmailSendSavedEmail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Activities\ConvertCurrentEntityToJson.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\MathAnalyzeDataQuery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\MathDetermineRatio.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Activities\QueryGetResults.cs" />

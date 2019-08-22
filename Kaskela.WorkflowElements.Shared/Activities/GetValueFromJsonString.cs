@@ -49,9 +49,8 @@ namespace Kaskela.WorkflowElements.Shared.Activities
         protected override void Execute(CodeActivityContext context)
         {
             var workflowContext = context.GetExtension<IWorkflowContext>();
-            if (workflowContext != null && workflowContext.InputParameters.Contains("Target") && workflowContext.InputParameters["Target"] is Entity && !string.IsNullOrEmpty(JsonString.Get<string>(context)) && !string.IsNullOrEmpty(JsonPath.Get<string>(context)))
+            if (!string.IsNullOrEmpty(JsonString.Get<string>(context)) && !string.IsNullOrEmpty(JsonPath.Get<string>(context)))
             {
-                var entity = (Entity)workflowContext.InputParameters["Target"];
                 JObject jsonObject = JObject.Parse(JsonString.Get<string>(context));
                 JToken token = jsonObject.SelectToken(JsonPath.Get<string>(context));
                 if(token != null)

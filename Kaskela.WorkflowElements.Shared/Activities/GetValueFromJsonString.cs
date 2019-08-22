@@ -21,7 +21,7 @@ namespace Kaskela.WorkflowElements.Shared.Activities
         [Input("Json String")]
         public InArgument<string> JsonString { get; set; }
 
-        [Input("Property Name")]
+        [Input("Json Path")]
         public InArgument<string> JsonPath { get; set; }
 
         [Output("Single Value - Result as Whole Number")]

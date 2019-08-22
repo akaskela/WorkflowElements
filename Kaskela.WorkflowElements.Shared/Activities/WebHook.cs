@@ -29,8 +29,12 @@ namespace Kaskela.WorkflowElements.Shared.Activities
         [Input("Request Url")]
         public InArgument<string> RequestUrl { get; set; }
 
+        [Input("Send Current Record as Request Body")]
+        public InArgument<bool> SendCurrentRecordAsBody { get; set; }
+
         [Input("Request Body")]
         public InArgument<string> RequestBody { get; set; }
+
 
         public const int GET = 222540000;
         public const int HEAD = 222540001;
@@ -66,8 +70,11 @@ namespace Kaskela.WorkflowElements.Shared.Activities
             var workflowContext = context.GetExtension<IWorkflowContext>();
             if (workflowContext != null && workflowContext.InputParameters.Contains("Target") && workflowContext.InputParameters["Target"] is Entity && string.IsNullOrEmpty(RequestBody.Get<string>(context)))
             {
-                var entity = (Entity)workflowContext.InputParameters["Target"];
-                body = JsonConvert.SerializeObject(entity);
+                if (SendCurrentRecordAsBody.Get(context))
+                {
+                    var entity = (Entity)workflowContext.InputParameters["Target"];
+                    body = JsonConvert.SerializeObject(entity);
+                }
             }
             else
             {

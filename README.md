@@ -24,6 +24,7 @@ Both versions of the tool include the following activities:
 * Relationship – Disassociate All
 * Webhook - Call Webhook
 * Webhook - Get Value From Json
+* Webhook - Serialize Current Entity
 * Workflow – Get Metadata
 
 While the Dynamics 365 CE version also includes:

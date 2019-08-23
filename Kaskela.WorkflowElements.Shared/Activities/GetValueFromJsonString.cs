@@ -18,9 +18,11 @@ namespace Kaskela.WorkflowElements.Shared.Activities
 {
     public class GetValueFromJson : ContributingClasses.WorkflowBase
     {
+        [RequiredArgument]
         [Input("Json String")]
         public InArgument<string> JsonString { get; set; }
 
+        [RequiredArgument]
         [Input("Json Path")]
         public InArgument<string> JsonPath { get; set; }
 

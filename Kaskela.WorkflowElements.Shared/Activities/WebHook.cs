@@ -85,6 +85,7 @@ namespace Kaskela.WorkflowElements.Shared.Activities
                 }
                 if (response != null)
                 {
+                    response.Result.EnsureSuccessStatusCode();
                     StringBuilder delimitedHeaders = new StringBuilder();
                     foreach (var header in response.Result.Headers)
                     {

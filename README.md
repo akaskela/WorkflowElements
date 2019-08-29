@@ -5,7 +5,6 @@ Workflow Elements is a workflow assembly available for the Microsoft Power Platf
 
 Both versions of the tool include the following activities:
 * Assign – Get Owner by Query
-* Audit – Get Last Update
 * Audit – Get Recent Updates
 * Date – Add or Subtract
 * Date – Build Date From Parts
@@ -13,7 +12,6 @@ Both versions of the tool include the following activities:
 * Date – Get Date Components
 * Documents – Rename File
 * Emails – Add Recipients from Query
-* Emails – Attach Document
 * Emails – Attach Multiple Documents
 * Emails – Send a Draft Email
 * Math – Analyze Data Set

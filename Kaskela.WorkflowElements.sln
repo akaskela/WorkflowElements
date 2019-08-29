@@ -9,6 +9,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaskela.WorkflowElements.CE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaskela.WorkflowElements.Cds", "Kaskela.WorkflowElements.Cds\Kaskela.WorkflowElements.Cds.csproj", "{A4929466-B735-4525-BF7E-33AB6D0DA652}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions", "Solutions", "{605C4553-3118-4E7A-985E-A165A1632E8E}"
+	ProjectSection(SolutionItems) = preProject
+		Solutions\KaskelasWorkflowElementsforCDS_3_0_0_0 - Managed.zip = Solutions\KaskelasWorkflowElementsforCDS_3_0_0_0 - Managed.zip
+		Solutions\KaskelasWorkflowElementsforCDS_3_0_0_0 - Unmanaged.zip = Solutions\KaskelasWorkflowElementsforCDS_3_0_0_0 - Unmanaged.zip
+		Solutions\KaskelasWorkflowElementsforCDS_3_1_0_0 - Managed.zip = Solutions\KaskelasWorkflowElementsforCDS_3_1_0_0 - Managed.zip
+		Solutions\KaskelasWorkflowElementsforCDS_3_1_0_0 - Unmanaged.zip = Solutions\KaskelasWorkflowElementsforCDS_3_1_0_0 - Unmanaged.zip
+		Solutions\KaskelasWorkflowElementsforDynamics365CE_3_0_0_0 - Managed.zip = Solutions\KaskelasWorkflowElementsforDynamics365CE_3_0_0_0 - Managed.zip
+		Solutions\KaskelasWorkflowElementsforDynamics365CE_3_0_0_0 - Unmanaged.zip = Solutions\KaskelasWorkflowElementsforDynamics365CE_3_0_0_0 - Unmanaged.zip
+		Solutions\KaskelasWorkflowElementsforDynamics365CE_3_1_0_0 - Managed.zip = Solutions\KaskelasWorkflowElementsforDynamics365CE_3_1_0_0 - Managed.zip
+		Solutions\KaskelasWorkflowElementsforDynamics365CE_3_1_0_0 - Unmanaged.zip = Solutions\KaskelasWorkflowElementsforDynamics365CE_3_1_0_0 - Unmanaged.zip
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Kaskela.WorkflowElements.Shared\Kaskela.WorkflowElements.Shared.projitems*{3971fab5-1c99-452a-8ffc-635012a518b2}*SharedItemsImports = 4

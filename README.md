@@ -5,6 +5,9 @@ Workflow Elements is a workflow assembly available for the Microsoft Power Platf
 
 Workflow Elements is a free solution for Dynamics 365 that gives you the tools to build workflow in ways you never thought possible. You can query for records (even filtering it to related records), insert tables into emails and tasks, format dates any way you want and more, all with a clean, easy to use interface.
 
+### You can download the latest managed and unmanaged solutions from the [Releases](https://github.com/akaskela/WorkflowElements/releases) page.
+
+
 # Available Activities
 ## CDS and Dynamics 365 CE
 * [Assign - Get Owner by Query](https://github.com/akaskela/WorkflowElements/wiki/Assign-Get-Owner-by-Query)

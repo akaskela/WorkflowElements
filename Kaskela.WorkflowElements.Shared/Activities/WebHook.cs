@@ -70,8 +70,24 @@ namespace Kaskela.WorkflowElements.Shared.Activities
             {
                 body = RequestBody.Get<string>(context);
             }
+
+            List<string> headers = new List<string>();
+
+            var requestHeaders = RequestHeaders.Get<string>(context)?.Split(';');
+            if (requestHeaders != null)
+            {
+                headers.AddRange(requestHeaders);
+            }
+
             using (var client = new HttpClient())
             {
+                foreach(var header in headers)
+                {
+                    var headerKeyValue = header.Split(':');
+
+                    client.DefaultRequestHeaders.Add(headerKeyValue[0], headerKeyValue[1]);
+                }
+
                 var content = new StringContent(body, Encoding.UTF8, "application/json");
 
                 System.Threading.Tasks.Task<HttpResponseMessage> response = null;

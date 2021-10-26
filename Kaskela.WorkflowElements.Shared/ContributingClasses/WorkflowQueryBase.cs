@@ -111,6 +111,16 @@ namespace Kaskela.WorkflowElements.Shared.ContributingClasses
                             }
 
                         }
+                        else if (itemToEvaluate is EntityCollection)
+                        {
+                            var entities = itemToEvaluate as EntityCollection;
+                            if (entities.Entities.Any() && entities.Entities.First().LogicalName.Equals("activityparty"))
+                            {
+                                newRow[c.Header] = string.Join("; ", entities.Entities
+                                    .Where(e => e.FormattedValues.ContainsKey("partyid"))
+                                    .Select(e => e.FormattedValues["partyid"]));
+                            }
+                        }
                         else if (itemToEvaluate is Guid)
                         {
                             newRow[c.Header] = (Guid)itemToEvaluate;

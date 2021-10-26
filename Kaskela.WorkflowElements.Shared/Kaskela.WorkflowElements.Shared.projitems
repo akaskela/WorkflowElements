@@ -240,4 +240,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Newtonsoft\WriteState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StaticMethods.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Kaskela.WorkflowElements.snk" />
+  </ItemGroup>
 </Project>

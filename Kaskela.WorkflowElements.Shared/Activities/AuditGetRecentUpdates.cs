@@ -69,10 +69,11 @@ namespace Kaskela.WorkflowElements.Shared.Activities
                 }
             }
 
+            int maxUpdates = this.MaxAuditLogs.Get(context) > 100 || this.MaxAuditLogs.Get(context) < 1 ? 100 : this.MaxAuditLogs.Get(context);
             RetrieveRecordChangeHistoryRequest request = new RetrieveRecordChangeHistoryRequest()
             {
                 Target = new EntityReference(workflowContext.PrimaryEntityName, workflowContext.PrimaryEntityId),
-                PagingInfo = new PagingInfo() { Count = 100, PageNumber = 1 }
+                PagingInfo = new PagingInfo() { Count = maxUpdates, PageNumber = 1 }
             };
             RetrieveRecordChangeHistoryResponse response = service.Execute(request) as RetrieveRecordChangeHistoryResponse;
             var detailsToInclude = response.AuditDetailCollection.AuditDetails
@@ -126,6 +127,11 @@ namespace Kaskela.WorkflowElements.Shared.Activities
             }
             return table;
         }
+
+        [Input("Max # of audit logs (up to 100)")]
+        [RequiredArgument()]
+        [Default("100")]
+        public InArgument<int> MaxAuditLogs { get; set; }
 
         [RequiredArgument]
         [Input("Time Zone for Display")]

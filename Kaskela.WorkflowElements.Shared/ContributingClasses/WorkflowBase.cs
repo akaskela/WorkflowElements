@@ -31,8 +31,9 @@ namespace Kaskela.WorkflowElements.Shared.ContributingClasses
             }
             else if (this.ExecutionUser.Get(context).Value == 222540001)
             {
-                returnValue = serviceFactory.CreateOrganizationService(workflowContext.InitiatingUserId);
+                returnValue = serviceFactory.CreateOrganizationService(workflowContext.UserId);
             }
+
             return returnValue;
         }
     }
